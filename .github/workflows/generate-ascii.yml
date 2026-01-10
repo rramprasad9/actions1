@@ -9,8 +9,8 @@ jobs:
 
         - name: Install cowsay command
           run: |
-            sudo app-get update
-            sudo app-get install cowsay -y
+            sudo apt-get update
+            sudo apt-get install cowsay -y
 
         - name: Generate ASCII Artwork
           run: cowsay -f dragon "Run for cover, I a DRAGON....RAWR" >> dragon.txt
